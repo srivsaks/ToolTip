@@ -1,0 +1,26 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  color: #d42c56;
+  border-bottom: 1px solid red;
+  cursor: help;
+}
+
+.tip {
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 10%;
+  color: white;
+  border-radius: 10px;
+  background-color: #d42c56;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+  /* opacity: 0; */
+  /*top: 0;*/
+}
+.active {
+  visibility: visible;
+  opacity: 1;
+}
